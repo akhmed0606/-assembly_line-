@@ -1,0 +1,6 @@
+To be honest, this was a tricky exam! However, challenges fuel my motivation so I had lots of fun doing it, even though it took more time that I expected it to. 
+Before starting to work on this assessment, I prepared myself by spending a good amount of time thinking about how to implement the logic in this task and reading the Mouse events docs. 
+I was also trying to decide between building this application in React or Typescript. I've played around with Typescript before so decided to go with it. I didn't have to use too many types in the task and I chose to go with this option because I really wanted to get the bonus points.
+What challenges I faced while working: one of them was that on-enter key-press didn't work with the "add" button, so I initially removed on-enter to make sure they don't conflict with each other. I added it after I completed the button clicks.
+Another challenge was when I had issues with placing stages below the input in the row direction. I wrapped the input with div and added position absolute to solve this issue. 
+Potential improvements I could do if I had more time: I would make this fully responsive on all screen sizes, and I would use a table for stages. I would also write unit testing to check the functionalities.

@@ -21,14 +21,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   border-bottom-right-radius: 0.5rem;
   border: none;
 }
-#taskInputfocus {
+#taskInput:focus {
   outline: none;
 }
 
 .btnAdd {
   background-color: #b4dfe5;
   padding: 0.45rem 0.9rem 0.45rem 0.9rem;
-  color: white;
+  color: #303c6c;
+  font-weight: 700;
   border:none;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -41,4 +42,13 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 .stages {
   color: #f4976c;
+}
+.taskBtn {
+  width: fit-content;
+  height: 2.2rem;
+  background-color: #d2fdff;
+  color: #303c6c;
+  border: none;
+  font-weight: 600;
+  border-radius: 3px;
 }

@@ -74,13 +74,11 @@ const AssemblyLine = ({ stages }: Istages) => {
                         ]
                       : [
                           ...tasks.slice(0, i),
-                          [
-                            ...tasks[i].slice(0, j),
-                            ...tasks[i].slice(j + 1),
-                            task,
-                          ],
-                          ...tasks.slice(i + 1),
-                        ]
+                          [...tasks[i].slice(0, j),
+                            ...tasks[i].slice(j + 1)],
+                            [...tasks[i + 1], task],
+                            ...tasks.slice(i + 2)
+                      ]
                   );
                 }}
               >

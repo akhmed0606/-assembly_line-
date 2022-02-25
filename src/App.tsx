@@ -21,11 +21,16 @@ const AssemblyLine = ( {stages }: Istages) => {
       return;
     }
      setTasks((tasks): any => [[...tasks[0], task], ...tasks.slice(1)])
+     setTask("")
   }
   
   return (
     <>
-     <button onClick={() => setTask(task)} className='btnAdd'>Add an item:</button>
+     <button onClick={() => {if (stages.length === 0) {
+              return;
+            }
+            setTasks((tasks) => [[...tasks[0], task], ...tasks.slice(1)]);
+            setTask("")}} className='btnAdd'>Add an item:</button>
      <input type='text' id='taskInput' onChange={handleChange} value={task} onKeyPress={onEnter} />
      {task}
     </>

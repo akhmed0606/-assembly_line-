@@ -17,7 +17,7 @@ const AssemblyLine = ( {stages }: Istages) => {
  
   const onEnter = (e: KeyboardEvent) => {
     if (e.key === 'Enter'){
-      stages.length === 0
+     if (stages.length === 0)
       return;
     }
      setTasks((tasks): any => [[...tasks[0], task], ...tasks.slice(1)])

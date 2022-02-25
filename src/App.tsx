@@ -18,6 +18,7 @@ const AssemblyLine = ({ stages }: Istages) => {
 
   return (
     <>
+    <div>
       <button
         onClick={() => {
           if (stages.length === 0) {
@@ -32,16 +33,28 @@ const AssemblyLine = ({ stages }: Istages) => {
       </button>
       <input type="text" id="taskInput" onChange={handleChange} value={task} />
       {task}
-      
-      {stages.map((stage,id) => {
+      </div>
+      {stages.map((stage,i) => {
         return (
-          <div key={id}>
-        
-          <h3>{stage}</h3>
+          
+          <div key={`${stage}-${i}`} className='stageContainer'>
+            <div className='stages'>
+            <h3>{stage}</h3>
+            </div>
+
+         {(tasks[i] ?? [])?.map((task: string, j: string) => (
+           <button
+           
+           
+           >
+
+           </button>
+         ))}
         </div>
         )
       
       })}
+     
     </>
   );
 };

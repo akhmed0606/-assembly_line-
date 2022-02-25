@@ -16,16 +16,29 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 #taskInput {
-   height: 2rem;
-   width: 12rem;
-   margin: 0.7rem;
+  padding: 0.45rem 0.9rem 0.45rem 0.9rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: none;
 }
+#taskInputfocus {
+  outline: none;
+}
+
 .btnAdd {
-  height: 3rem;
-  border-radius: 5px;
+  background-color: #b4dfe5;
+  padding: 0.45rem 0.9rem 0.45rem 0.9rem;
+  color: white;
+  border:none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  margin: 0;
 }
-.stageContainer{
+.stageWrapper{
   display: flex ;
   justify-content: space-between;
   padding: 20px;
+}
+.stages {
+  color: #f4976c;
 }

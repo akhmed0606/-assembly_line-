@@ -41,12 +41,12 @@ const AssemblyLine = ({ stages }: Istages) => {
       {stages.map((stage, i) => {
         return (
           <div key={`${stage}-${i}`} className="stageContainer">
-            <div className="stages">
-              <h3>{stage}</h3>
+            <div className="stageWrapper">
+              <h3 className='stages'>{stage}</h3>
             </div>
 
             {(tasks[i] ?? [])?.map((task: string, j: string) => (
-              <button
+              <button className="taskBtn"
                 key={`${task}-${j}`}
                 onClick={() => {
                   setTasks((tasks) =>

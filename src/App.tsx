@@ -1,16 +1,30 @@
-import { useState,useRef } from 'react'
+import { useState } from 'react'
 import { Istages } from './interface';
 import './App.css';
 
-const Assembline = ( {stages }: Istages) => {
-  const [tasks, setTasks] = useState<string[]>([])
+const AssemblyLine = ( {stages }: Istages) => {
+  const [tasks, setTasks] = useState<any[]>([])
+  const [task, setTask] = useState<any>("")
+ 
+  const handleChange = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
+    setTask(value);
+    
+  };
+
+  
+  return (
+    <>
+     <button onClick={() => setTask(task)} className='btnAdd'>Add an item:</button>
+     <input type='text' id='taskInput' onChange={handleChange} value={task}/>
+     {task}
+    </>
+  )
 }
 
 function App() {
   return (
     <div className="App">
-      <button className='btnAdd'>Add an item:</button>
-     <input type='text' id='taskInput' ref={taskRef}/>
+       <AssemblyLine stages={["Idea", "Development", "Testing", "Deployment"]} />
     </div>
   );
 }

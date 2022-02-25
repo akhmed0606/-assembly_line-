@@ -1,3 +1,13 @@
+## 🚀 How to launch:
+
+> Please clone the repo and open it in your preferred text editor.
+ Then, please run: - ``npm i && npm start``
+
+ ```
+https://github.com/akhmed0606/-assembly_line-.git
+```
+<br>
+
 ## 💡 Overview
 
 Oftentimes, processes can be represented as a series of stages. The concept of an assembly line can be a useful way to organize production logic, list of tasks in varying degrees of completion, or track individuals progressing through a series of milestones.
@@ -17,8 +27,3 @@ Task name will be inputted through an input element using ENTER.
 RIGHT-CLICK an assembly item in the first stage will delete it from the assembly line (the task is no longer needed)
 - Task input only creates one task at a time and only adds a newly created task in the first stage.
 - Task should only be moved one stage at a time.
-
-
-## 🚀 Quick start
-
-- ``npm i && npm start``

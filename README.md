@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+## 💡 Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Oftentimes, processes can be represented as a series of stages. The concept of an assembly line can be a useful way to organize production logic, list of tasks in varying degrees of completion, or track individuals progressing through a series of milestones.
 
-## Available Scripts
+## ⚙ Functional requirements
 
-In the project directory, you can run:
+The AssemblyLine component (the container) will accept an array of stages in its props.
+The stages must be displayed in order of the input array.
+Each stage contains a list of tasks.
+Task name will be inputted through an input element using ENTER. 
 
-### `npm start`
+## ⚙ Expecting behaviour
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- On LEFT-CLICK assembly item (or task) should move on top of the next stage.
+- On RIGHT-CLICK assembly item (or task) should move at the bottom of the previous stage.
+- On LEFT-CLICK an assembly item in the last stage will delete off the assembly line (as the task finished moving through the assembly line).
+RIGHT-CLICK an assembly item in the first stage will delete it from the assembly line (the task is no longer needed)
+- Task input only creates one task at a time and only adds a newly created task in the first stage.
+- Task should only be moved one stage at a time.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## 🚀 Quick start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ``npm i && npm start``

@@ -1,4 +1,4 @@
-import { useState, useEffect, KeyboardEvent } from "react";
+import { useState, useEffect } from "react";
 import { Istages } from "./interface";
 import "./App.css";
 
@@ -56,6 +56,18 @@ const AssemblyLine = ({ stages }: Istages) => {
             [...tasks[i].slice(0,j), ...tasks[i].
              slice(j + 1)], ...tasks.slice(i + 1)
             ]
+             )
+           }}
+           onContextMenu={() => {
+             setTasks((tasks) => 
+                i === tasks.length - 1 ?
+                [...tasks.slice(0, i),
+                [...tasks[i].slice(0, i), ...tasks[i].slice(i + 1)],
+                ...tasks.slice(i + 1)
+                ]
+                : [
+                  
+                ]
              )
            }}
            >

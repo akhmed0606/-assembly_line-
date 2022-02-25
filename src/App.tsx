@@ -32,6 +32,16 @@ const AssemblyLine = ({ stages }: Istages) => {
       </button>
       <input type="text" id="taskInput" onChange={handleChange} value={task} />
       {task}
+      
+      {stages.map((stage,id) => {
+        return (
+          <div key={id}>
+        
+          <h3>{stage}</h3>
+        </div>
+        )
+      
+      })}
     </>
   );
 };

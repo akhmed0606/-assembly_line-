@@ -1,7 +1,9 @@
 ## 🚀 How to launch:
 
 > Please clone the repo and open it in your preferred text editor.
- Then, please run: - ``npm i && npm start``
+
+> Then, please run: - ``npm i && npm start``
+ 
 
  ```
 https://github.com/akhmed0606/-assembly_line-.git
